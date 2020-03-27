@@ -1,0 +1,82 @@
+.topnav { /*är namn till en funktion i html */
+    background-color: #333; /*Ändrar bakgrundsfärgen på navigerings gaveln */
+    overflow: hidden; /*Gör så att man kan se allt även om bilden är för stor för en ruta så gör den så att man kan scrolla */
+  }
+  .topnav a { /*Påverkar hur navigations rutan kommer att se ut */
+    float: left; /*Höger eller vänsterjusterar texten inne i "topnav" */
+    color: #f2f2f2; /*Påverkar färgen */
+    text-align: center; /*Ändrar textjusteringen */
+    padding: 10px 16px; /*Påverkar utrymmet där texten står på */
+    text-decoration: none; /*Gör så att texten antingen blir understuken, fetstilt eller inget av dem */
+    font-size: 17px; /*Ändrar storleken på texten */
+  }
+
+  .topnav a:hover{ /*Gör så att något kan ändras när man håller musen över "topnav" */
+      background-color: #ddd; /*ändrar bakgrundsfärgen */
+      color: black; /*ändrar färgen */
+  }
+
+  .topnav a:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
