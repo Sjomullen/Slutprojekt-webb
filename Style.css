@@ -86,4 +86,20 @@
     border-collapse: collapse;
   }
 
+  tr:nth-child(1){ /* */
+    background-color: Grey;
+  }
+
+tr:nth-child(2){ /* */
+    background-color: Orange;
+  }
+
+tr:nth-child(3){ /* */
+    background: Red;
+  }    
+
+tr:nth-child(4){ /* */
+    background-color: Orange;
+  }
+
   
