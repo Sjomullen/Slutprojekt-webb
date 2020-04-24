@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Forum</title>
+    <link href="Style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="navbar">
+        <a href="Main.html">Hem</a>
+        <a href="Formulär.html">Formulär</a>
+        <div class="dropdown">
+          <button class="dropbtn">CPU 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="CPU.html">CPU</a>
+            <a href="CPUer.html">CPUer</a>
+          </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">GPU 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="GPU.html">GPU</a>
+              <a href="GPUer.html">GPUer</a>
+            </div>
+        </div>  
+    </div>
+		<h1>Välkommen</h1>
+
+		<form>
+			<label for="Förnamn">Förnamn</label><br>
+			<input type="text" id="Förnamn" name="Förnamn" value=""><br>
+			<label for="Efternamn">Efternamn</label><br>
+			<input type="text" id="Efternamn" name="Efternamn" value=""><br>
+		</form> 
+		<br>
+		<form>
+			<input type="radio" id="Man" name="Kön" value="Man">
+			<label for="Man">Man</label><br>
+			<input type="radio" id="Kvinna" name="Kön" value="Kvinna">
+			<label for="Kvinna">Kvinna</label><br>
+			<input type="radio" id="Annat" name="Kön" value="Annat">
+			<label for="Annat">Annat</label><br><br>		
+			<input type="Submit" value="Accept" formaction="Formulär1.html">
+			<input type="Submit" value="Cancel" formaction="Formulär2.html">
+		
+			
+		</form>
+	</body>
+</html>
