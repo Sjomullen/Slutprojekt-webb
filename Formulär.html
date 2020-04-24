@@ -34,22 +34,21 @@
 
 		<form>
 			<label for="Förnamn">Förnamn</label><br>
-			<input type="text" id="Förnamn" name="Förnamn" value=""><br>
+			<input type="text" id="Förnamn" name="Förnamn" required><br>
 			<label for="Efternamn">Efternamn</label><br>
-			<input type="text" id="Efternamn" name="Efternamn" value=""><br>
-		</form> 
-		<br>
-		<form>
-			<input type="radio" id="Man" name="Kön" value="Man">
-			<label for="Man">Man</label><br>
-			<input type="radio" id="Kvinna" name="Kön" value="Kvinna">
-			<label for="Kvinna">Kvinna</label><br>
-			<input type="radio" id="Annat" name="Kön" value="Annat">
-			<label for="Annat">Annat</label><br><br>		
-			<input type="Submit" value="Accept" formaction="Formulär1.html">
+            <input type="text" id="Efternamn" name="Efternamn" value="" required><br>
+            
+            <input type="radio" id="man" name="kön" value="man" required>
+            <label for="man">Man</label><br>
+            <input type="radio" id="kvinna" name="kön" value="kvinna" required>
+            <label for="kvinna">Kvinna</label><br>
+            <input type="radio" id="annat" name="kön" value="annat" required>
+            <label for="annat">Other</label>
+
+            <p> </p>
+
+            <input type="Submit" value="Accept" formaction="Formulär1.html">
 			<input type="Submit" value="Cancel" formaction="Formulär2.html">
-		
-			
 		</form>
 	</body>
 </html>
