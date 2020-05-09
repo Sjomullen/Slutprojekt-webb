@@ -1,38 +1,56 @@
-<!DOCTYPE html>
-<html lang="sv">
+<!DOCTYPE html> <!--Är en av standarderna inom html-->
+<html lang="sv"> <!--Gör så att uppläsnings språket är svenska-->
 
-  <head>
-    <meta charset="utf-8">
-    <title>Forum1</title>
-    <link href="Style.css" rel="stylesheet">
-  </head>
+    <head> <!--här börjar en del av koden men som man inte ser på hemsidan-->
 
-  <body>
-    <div class="navbar">
-        <a href="Main.html">Hem</a>
-        <a href="Formulär.html">Formulär</a>
-        <div class="dropdown">
-          <button class="dropbtn">CPU 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="CPU.html">CPU</a>
-            <a href="CPUer.html">CPUer</a>
-          </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">GPU 
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="GPU.html">GPU</a>
-              <a href="GPUer.html">GPUer</a>
+        <meta charset="utf-8"> <!--Är en annan del av standarden för html-->
+        <title>Hem</title> <!--Det som står inom title kommer att visas där webbsidans url annars skulle vara-->
+        <link href="Style.css" rel="stylesheet"> <!--Sammanbinder html koden med css koden-->
+
+    </head> <!--Här slutar den döljda koden-->
+
+
+    <body> <!--Här börjar koden som gör så att man ser olika saker på sin hemsida-->
+        <div class="navbar"> <!--Div omsluter det som är innanför div-->
+            <a href="Main.html">Hem</a> <!--Länkar samman olika html koder-->
+            <a href="Formulär.html">Formulär</a> 
+
+            <div class="dropdown"> 
+
+                <button class="dropbtn">CPU 
+                <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-content">
+                    <a href="CPU.html">CPU</a> <!--Länkar samman olika html koder-->
+                    <a href="CPUer.html">CPUer</a> 
+                </div>
+
             </div>
-        </div>  
-    </div>
 
-  <p>Bra jobbat!<p>
 
+            <div class="dropdown"> <!--En div för en dropdown meny-->
+
+                <button class="dropbtn">GPU <!--Knapp för att kunna klicka in på dem olika sidorna-->
+                    <i class="fa fa-caret-down"></i>
+                </button> <!--Här slutar "knappen"-->
+
+
+                <div class="dropdown-content">
+                    <a href="GPU.html">GPU</a>
+                    <a href="GPUer.html">GPUer</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <main>
+          <article>
+            <p>Bra jobbat!<p>
+          </article>
+        </main>
 		
-	</body>
+  </body>
+  
 </html>

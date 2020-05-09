@@ -1,90 +1,111 @@
-<!DOCTYPE html>
-<html lang="sv">
-    <head>
-        <meta charset="utf-8">
-        <title>CPUer</title>
-        <link href="Style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="navbar">
-            <a href="Main.html">Hem</a>
-            <a href="Formulär.html">Formulär</a>
-            <div class="dropdown">
-              <button class="dropbtn">CPU 
+<!DOCTYPE html> <!--Är en av standarderna inom html-->
+<html lang="sv"> <!--Gör så att uppläsnings språket är svenska-->
+
+    <head> <!--här börjar en del av koden men som man inte ser på hemsidan-->
+
+        <meta charset="utf-8"> <!--Är en annan del av standarden för html-->
+        <title>Hem</title> <!--Det som står inom title kommer att visas där webbsidans url annars skulle vara-->
+        <link href="Style.css" rel="stylesheet"> <!--Sammanbinder html koden med css koden-->
+
+    </head> <!--Här slutar den döljda koden-->
+
+
+    <body> <!--Här börjar koden som gör så att man ser olika saker på sin hemsida-->
+        <div class="navbar"> <!--Div omsluter det som är innanför div-->
+            <a href="Main.html">Hem</a> <!--Länkar samman olika html koder-->
+            <a href="Formulär.html">Formulär</a> 
+
+            <div class="dropdown"> 
+
+                <button class="dropbtn">CPU 
                 <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="CPU.html">CPU</a>
-                <a href="CPUer.html">CPUer</a>
-              </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">GPU 
-                  <i class="fa fa-caret-down"></i>
                 </button>
+
                 <div class="dropdown-content">
-                  <a href="GPU.html">GPU</a>
-                  <a href="GPUer.html">GPU</a>
-
+                    <a href="CPU.html">CPU</a> <!--Länkar samman olika html koder-->
+                    <a href="CPUer.html">CPUer</a> 
                 </div>
-              </div>  
-          </div>
-          <p>A</p>
 
-    <table style="width:500px">
-       <caption>Intel processoer (only I7)</caption>
-        <tr>
-          <th>Namn</th>
-          <th>År</th>
-          <th>Klockfrekvens</th>
-         </tr>
+            </div>
+
+
+            <div class="dropdown"> <!--En div för en dropdown meny-->
+
+                <button class="dropbtn">GPU <!--Knapp för att kunna klicka in på dem olika sidorna-->
+                    <i class="fa fa-caret-down"></i>
+                </button> <!--Här slutar "knappen"-->
+
+
+                <div class="dropdown-content">
+                    <a href="GPU.html">GPU</a>
+                    <a href="GPUer.html">GPUer</a>
+                </div>
+
+            </div>
+
+        </div>
+        
+        <main>
+          <article>
+
+          <table style="width:500px">
+            <caption>Intel processoer (only I7)</caption>
+              <tr>
+                <th>Namn</th>
+                <th>År</th>
+                <th>Klockfrekvens</th>
+              </tr>
     
-        <tr>
-          <td>8700/K</td>
-          <td>2017</td>
-          <td>3.2 GHz, 4.6 turbo/3.7 GHz, 4.7 turbo</td>
-        </tr>
+              <tr>
+                <td>8700/K</td>
+                <td>2017</td>
+                <td>3.2 GHz, 4.6 turbo/3.7 GHz, 4.7 turbo</td>
+              </tr>
     
-        <tr>
-          <td>9700K/KF</td>
-          <td>2018/2019</td>
-          <td>3.6 GHz, 4.9 GHz turbo/3.6 GHz, 4.9 GHz turbo</td>
-        </tr>
+              <tr>
+                <td>9700K/KF</td>
+                <td>2018/2019</td>
+                <td>3.6 GHz, 4.9 GHz turbo/3.6 GHz, 4.9 GHz turbo</td>
+              </tr>
      
-        <tr>
-          <td>7820X</td>
-          <td>2020</td>
-          <td>3.6 GHz, 4.5 GHz turbo</td>
-        </tr>
-    </table>
+              <tr>
+                <td>7820X</td>
+                <td>2020</td>
+                <td>3.6 GHz, 4.5 GHz turbo</td>
+                </tr>
+          </table>
 
-    <h1></h1> 
+            <p> </p>
 
-    <table style="width:500px">
-      <caption>AMD processoer</caption>
-       <tr>
-         <th>Namn</th>
-         <th>År</th>
-         <th>Klockfrekvens</th>
-        </tr>
+          <table style="width:500px">
+            <caption>AMD processoer</caption>
+              <tr>
+                <th>Namn</th>
+                <th>År</th>
+                <th>Klockfrekvens</th>
+              </tr>
    
-       <tr>
-         <td>7 3700X</td>
-         <td>2020</td>
-         <td>3.6 GHz, 4.4 turbo</td>
-       </tr>
+              <tr>
+                <td>7 3700X</td>
+                <td>2020</td>
+                <td>3.6 GHz, 4.4 turbo</td>
+              </tr>
    
-       <tr>
-         <td>5 3600</td>
-         <td>2020</td>
-         <td>3.6 GHz, 4.2 GHz turbo</td>
-       </tr>
+              <tr>
+                <td>5 3600</td>
+                <td>2020</td>
+                <td>3.6 GHz, 4.2 GHz turbo</td>
+              </tr>
 
-       <tr>
-         <td>9 3950X</td>
-         <td>2019</td>
-         <td>3.5 GHz, 4.7 GHz turbo</td>
-       </tr>
-   </table>
+              <tr>
+                <td>9 3950X</td>
+                <td>2019</td>
+                <td>3.5 GHz, 4.7 GHz turbo</td>
+              </tr>
+          </table>
 
-    </body>
+          </article>
+        </main> 
+
+  </body>
+</html>
