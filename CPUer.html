@@ -4,51 +4,28 @@
     <head> <!--här börjar en del av koden men som man inte ser på hemsidan-->
 
         <meta charset="utf-8"> <!--Är en annan del av standarden för html-->
-        <title>Hem</title> <!--Det som står inom title kommer att visas där webbsidans url annars skulle vara-->
+        <title>CPUerS</title> <!--Det som står inom title kommer att visas där webbsidans url annars skulle vara-->
         <link href="Style.css" rel="stylesheet"> <!--Sammanbinder html koden med css koden-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
     </head> <!--Här slutar den döljda koden-->
 
 
     <body> <!--Här börjar koden som gör så att man ser olika saker på sin hemsida-->
-        <div class="navbar"> <!--Div omsluter det som är innanför div-->
-            <a href="Main.html">Hem</a> <!--Länkar samman olika html koder-->
-            <a href="Formulär.html">Formulär</a> 
-
-            <div class="dropdown"> 
-
-                <button class="dropbtn">CPU 
-                <i class="fa fa-caret-down"></i>
-                </button>
-
-                <div class="dropdown-content">
-                    <a href="CPU.html">CPU</a> <!--Länkar samman olika html koder-->
-                    <a href="CPUer.html">CPUer</a> 
-                </div>
-
-            </div>
-
-
-            <div class="dropdown"> <!--En div för en dropdown meny-->
-
-                <button class="dropbtn">GPU <!--Knapp för att kunna klicka in på dem olika sidorna-->
-                    <i class="fa fa-caret-down"></i>
-                </button> <!--Här slutar "knappen"-->
-
-
-                <div class="dropdown-content">
-                    <a href="GPU.html">GPU</a>
-                    <a href="GPUer.html">GPUer</a>
-                </div>
-
-            </div>
-
-        </div>
         
+      <nav>    
+        <ul>
+          <li><a href="Main.html">Hem</a></li>
+          <li><a href="Formulär.html">Formulär</a></li>
+          <li><a href="CPU.html">CPU</a></li>
+          <li><a href="GPU.html">GPU</a></li>
+        </ul>
+      </nav>  
+
         <main>
           <article>
 
-          <table style="width:500px">
+          <table>
             <caption>Intel processoer (only I7)</caption>
               <tr>
                 <th>Namn</th>
@@ -77,7 +54,7 @@
 
             <p> </p>
 
-          <table style="width:500px">
+          <table>
             <caption>AMD processoer</caption>
               <tr>
                 <th>Namn</th>
@@ -108,4 +85,5 @@
         </main> 
 
   </body>
+
 </html>
