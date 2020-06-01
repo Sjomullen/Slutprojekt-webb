@@ -1,105 +1,122 @@
-.topnav { /*är namn till en funktion i html */
-    background-color: #333; /*Ändrar bakgrundsfärgen på navigerings gaveln */
-    overflow: hidden; /*Gör så att man kan se allt även om bilden är för stor för en ruta så gör den så att man kan scrolla */
-  }
-  .topnav a { /*Påverkar hur navigations rutan kommer att se ut */
-    float: left; /*Höger eller vänsterjusterar texten inne i "topnav" */
-    color: #f2f2f2; /*Påverkar färgen */
-    text-align: center; /*Ändrar textjusteringen */
-    padding: 10px 16px; /*Påverkar utrymmet där texten står på */
-    text-decoration: none; /*Gör så att texten antingen blir understuken, fetstilt eller inget av dem */
-    font-size: 17px; /*Ändrar storleken på texten */
+  main    /*Grid*/ 
+  {
+    font-family: Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas: /*Hur griden kommer att se ut*/ 
+      'left content right';
+
+      grid-template-columns: 33vw 33vw 33vw; /*Storleken på griden*/ 
+      grid-template-rows:    25vw; /*Hur radena läggs ut*/ 
   }
 
-  .topnav a:hover{ /*Gör så att något kan ändras när man håller musen över "topnav" */
-      background-color: #ddd; /*ändrar bakgrundsfärgen */
-      color: black; /*ändrar färgen */
+
+  article        
+  {
+    grid-area: content;
+    background-color: rgb(201, 34, 22);
+    margin-top: 5vw;
+    margin-bottom: 15vw;
+    border-radius: 10px;
+    height: 100%;
   }
 
-  .topnav a:hover{
-    background-color: #4CAF50;
-    color: white;
-}
+    /*Grid end*/ 
 
-.navbar {
+  .Text /*klass som gör att texten centreras */
+  {
+    text-align: center;
+
+  }
+  
+
+  table, td, th{ /*Hur tabellen kommer att se ut */
+    border: 1px solid black;
+    border-collapse: collapse;
+    width:500px
+  }
+
+  tr:nth-child(1){ /* Hur en unik cell kommer att se ut */
+    background-color: Grey;
+  }
+
+tr:nth-child(2){ 
+    background-color: Orange;
+  }
+
+tr:nth-child(3){ 
+    background: Red;
+  }    
+
+tr:nth-child(4){ 
+    background-color: Orange;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     background-color: #333;
   }
   
-  .navbar a {
+  ul > li { /*barn selektor*/
     float: left;
-    font-size: 16px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li > a { /*barnselektor*/
+    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
   }
 
-  table, td, th{
-    border: 1px solid black;
-    border-collapse: collapse;
+  .active { /*Ändrar färgen när man klickar*/
+    background-color: #4CAF50;
   }
 
-  tr:nth-child(1){ /* */
-    background-color: Grey;
+  iframe{ /* ändrar iframens storlek */
+    width: 50%;
+    height: 45%;
   }
 
-tr:nth-child(2){ /* */
-    background-color: Orange;
+  video{ /* ändrar videon storlek*/
+    width: 50%; 
+    height: 45%;
   }
 
-tr:nth-child(3){ /* */
-    background: Red;
-  }    
-
-tr:nth-child(4){ /* */
-    background-color: Orange;
+  #nav{ /* id selektor*/
+    font-family: Helvetica;
   }
 
-  
+  /*Love Focus Hate*/
+
+    a:link 
+    {
+        color: rgb(0, 0, 0);
+    }
+
+    a:visited 
+    {
+        color: rgb(58, 51, 112);
+    }
+
+    a:hover 
+    {
+        color: rgb(107, 165, 52);
+    }
+
+    a:active 
+    {
+        color: rgb(110, 27, 27);
+    }
